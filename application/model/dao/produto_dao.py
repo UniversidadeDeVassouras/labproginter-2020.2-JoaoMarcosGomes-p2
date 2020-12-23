@@ -1,15 +1,16 @@
-from application.model.entity.Produto import Produto 
-from application import listaCamisa
+from application.model.entity.produto import Produto
+import json
 
 class ProdutoDAO:
-    def _init_(self):
-        self._listaCamisa = listaCamisa 
 
-    def listar_produtos(self):
-        return self._listaCamisa
+    def __init__(self):
+        self._lstProduto = []
+    
+        with open('C:\\Users\\Jão\\Documents\\provap2linximpulse\\application\\view\static\\json\\products.json') as product_file:
+            product_list = json.load(product_file)
+    
+        for product in product_list:
+            self._lstProduto.append(Produto(product['id'],product['name'], product['image'], product['description'], product['oldPrice'], product['price'], product['installments']['value'], product['installments']['count']))
 
-    def buscar_por_id(self, id):
-        for produto in range(0, len(self._listaCamisa)):
-            if self._listaCamisa[produto].get_id() == int(id):
-                return self._listaCamisa[produto]
-        return None
+    def get_listar_produtos(self):
+        return self._lstProduto
