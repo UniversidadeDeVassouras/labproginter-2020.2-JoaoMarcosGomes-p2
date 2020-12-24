@@ -1,0 +1,274 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+body header {
+    background-color: #707070;
+    display: grid;
+    grid-template-areas: "subtitulo" "titulo" "textoComum" "botoes";
+    grid-template-rows: 9vh 5vh 7vh 11vh;
+    text-align: center;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.separator{
+    height: 125px;
+    margin-top:calc(125px * -1);
+    background-image: linear-gradient(to bottom left, 
+    transparent, transparent 50%, white 50%, white);
+}
+
+.separator-footer{
+    height: 125px;
+    margin-top:calc(230px * -1);
+    background-image: linear-gradient(to top left, 
+    transparent, transparent 50%, white 50%, white);
+}
+
+#selecaoSubtitulo {
+    margin-top: 60px;
+    margin-bottom: 1px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#tituloEspecial {
+    margin: 0;
+    font-size: 40px;
+}
+
+
+#divBotoes {
+    display: flex;
+    margin: 0;
+    padding-top: 20px;
+    flex-direction: row;
+    height: 51px;
+    justify-content: center;
+    gap: 60px;
+}
+
+#botaoAcessar, #botaoAcessar:focus{
+    width: 160px;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0;
+    border: none;
+    color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#sectionConteudo {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#sectionConteudo #divTexto {
+    max-width: 500px;
+}
+
+#SuaSelecao {
+    padding-top: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#SuaSelecao #Produtos {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: 50px;
+    flex-wrap: wrap;
+
+}
+
+#botaoComprar {
+    background-color: white;
+    border-radius: 4px;
+    width: 200px;
+    height: 30px;
+    color:  #888888;
+    font-size: 16px;
+    border: 1px solid #707070;
+
+}
+
+img {
+    width: 240px;
+    height: 200px;
+}
+
+#SuaSelecao #Produtos > div {
+    flex: 1 1 200px;
+} 
+
+
+#divTexto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #888888;
+}
+
+#divTextoTitulo {
+    font-weight: lighter;
+}
+
+#paragrafoDivTexto {
+    font-weight: normal;
+    padding-top: 15px;
+}
+
+#divForms {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888888;
+    font-size: 12px;
+    padding-left: 50px;
+}
+
+#listaGeneros {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+#inputName, #inputEmail, #inputCPF {
+    width: 340px;
+    height: 25px;
+}
+
+#botaoEnviar, #botaoEnviar:focus{
+    background-color: white;
+    border-radius: 4px;
+    width: 348px;
+    height: 39px;
+    color:  #888888;
+    font-size: 16px;
+    border: 1px solid #707070;
+}
+
+#divBotaoMaisProdutos {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+#botaoMaisProdutos {
+    background-color: white;
+    border-radius: 4px;
+    width: 260px;
+    height: 39px;
+    color:  #888888;
+    font-size: 16px;
+    border: 1px solid #707070;
+}
+
+#Compartilhe {
+    padding-top: 60px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#textoCompartilhe {
+    text-align: center;
+    font-size: 14px;
+    color: #888888;
+    padding-top: 20px;
+}
+
+#formsCompartilhar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+#nomeAmigo {
+    font-size: 12px;
+    color: #888888;
+}
+
+#inputNomeAmigo, #inputSeuEmail {
+    width: 340px;
+    height: 25px;
+}
+
+#seuEmail {
+    font-size: 12px;
+    color: #888888;
+}
+
+#divEnviarAgora {
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#botaoEnviarAgora {
+    background-color: white;
+    border-radius: 4px;
+    width: 260px;
+    height: 39px;
+    color:  #888888;
+    font-size: 16px;
+    border: 1px solid #707070;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #707070;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    margin-top: 80px;
+    gap: 5px;
+    padding-bottom: 80px;
+}
+
+body footer p {
+    margin: 0;
+}
+
+
+.title-lines {
+    overflow: hidden;
+    text-align: center;
+    color: #888888;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+  }
+  .title-lines > span{
+   position: relative;
+   display: inline-block;
+  }
+  .title-lines > span:before, .title-lines > span:after{
+   content: '';
+   position: absolute;
+   top: 50%;
+   border-bottom: .15rem solid;
+   width: 100vw;
+   margin: 0 20px;
+  }
+  .title-lines > span:before{
+   right: 100%;
+  }
+  .title-lines > span:after{
+   left: 100%;
+  }
+
+
